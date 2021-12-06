@@ -1,0 +1,9 @@
+Student Name: Xin Xie
+Student Number: D17128351
+
+Git Rep: https://github.com/xinmei540/Game-Engines-1.git
+
+Outline: For the assignment, I will do the music with model and this model will swing with the rhythm of music. This project will make use of
+procedural generation and it will paint and use component model by code in Unity3D. To complete this project I will create the 3D models 
+also use Unity by myself.
+ 
