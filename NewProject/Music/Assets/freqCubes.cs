@@ -15,6 +15,7 @@ public class freqCubes : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //To set the localScale for 8 cubes
         transform.localScale = new Vector3(transform.localScale.x, (AudioVisable.freqenceCubes[cubes] * scaleMultiplier) + startScale, transform.localScale.z);
     }
 }
