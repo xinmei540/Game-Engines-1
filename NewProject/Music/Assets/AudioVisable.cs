@@ -13,6 +13,7 @@ public class AudioVisable : MonoBehaviour
     AudioSource audioSource;
     public static float[] samples = new float[512];
     public static float[] freqenceCubes = new float[8];
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,11 +35,12 @@ public class AudioVisable : MonoBehaviour
     void GetFreqenceCubes()
     {
         int count = 0;
-
+        
         for(int i = 0; i < 8; i++)
         {
             float average = 0;
-            int sampleCount = (int)Mathf.Pow (2, i) * 2;
+            int sampleCount = (int)Mathf.Pow(2, i) * 2;
+
             if(i == 7)
             {
                 sampleCount += 2;
@@ -46,7 +48,7 @@ public class AudioVisable : MonoBehaviour
 
             for(int j = 0; j < sampleCount; j++)
             {
-                average += samples[count] * (count + 1);
+                average += samples[count] *  (count + 1);
                 count++;
             }
 
